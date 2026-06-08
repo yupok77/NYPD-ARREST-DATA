@@ -57,6 +57,7 @@ function arrestsByBorough() {
 
 
 
+
 function arrestsByAge() {
 
   let a1824 = 0;
@@ -97,6 +98,7 @@ function arrestsByAge() {
   document.getElementById("discussion").innerHTML =
     "This chart shows arrests by age group. It helps identify which age range appears most frequently in arrest records.";
 }
+
 
 
 
