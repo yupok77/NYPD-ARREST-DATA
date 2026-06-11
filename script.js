@@ -23,9 +23,7 @@ function displayCards(records) {
   get("leftPanel").innerHTML = build;
 }
 
-/* =========================
-   FILTER 1: BOROUGH ONLY
-========================= */
+
 function filterByBorough() {
 
   let borough =
@@ -49,9 +47,7 @@ function filterByBorough() {
     `${ct} Results found`;
 }
 
-/* =========================
-   FILTER 2: AGE + SEX
-========================= */
+
 function filterByAgeSex() {
 
   let ageGroup = get("ageGroup").value;
@@ -78,15 +74,8 @@ function filterByAgeSex() {
     `${ct} Results found`;
 }
 
-/* SHOW ALL */
-function showAll() {
-  displayCards(data);
 
-  get("result").innerHTML =
-    `${data.length} Results found`;
-}
 
-/* MAP */
 function showMap(lat, lon) {
 
   let location = [lat, lon];
@@ -113,7 +102,7 @@ function showMap(lat, lon) {
   }, 100);
 }
 
-/* CARD */
+
 function card(arrest) {
 
   return `
